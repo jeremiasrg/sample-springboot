@@ -140,4 +140,24 @@ http://localhost:9411/zipkin
 http://localhost:15672/
 ```
 
-Is missing something that you think importante ? Send me a message and I will create it. Thank you.
+### Swagger
+
+```jsx
+http://localhost:8100/swagger-ui.html
+
+http://localhost:8765/swagger-ui.html
+
+http://localhost:8002/swagger-ui.html
+```
+
+### Open API
+
+```jsx
+http://localhost:8002/cambio-service/v3/api-docs
+
+http://localhost:8100/book-service/v3/api-docs
+```
+
+Is missing something that you think important ? Send me a message and I will create it. 
+
+Thank you.
