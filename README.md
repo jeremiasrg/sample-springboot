@@ -44,10 +44,7 @@ This simple repository has some important Spring Boot concepts, for example:
  
 
 - API Gateway with Spring Cloud API Gateway:
-    - Look api-gateway folder
-
-    [sample-springboot/naming-server at main · jeremiasrg/sample-springboot](https://github.com/jeremiasrg/sample-springboot/tree/main/naming-server)
-
+    - Look api-gateway [folder](https://github.com/jeremiasrg/sample-springboot/tree/main/api-gateway)
 - Service Discovery/Service Registry with Eureka Discovery Client:
     - Look naming-server folder
 - Load Balancing with Eureka
