@@ -31,11 +31,12 @@ The response will show:
   "author": "Michael C. Feathers",
   "launchDate": "2017-11-29",
   "price": 49.11,
-  "title": "Working effectively with legacy code"
+  "title": "Working effectively with legacy code",
+  "environment": "8100FEIGN"
 }
 ```
 
-The book price will be in Reais, brazilian's currency. 
+The book price will be in Reais, brazilian currency. 
 
 ### Projetcs Struture:
 
