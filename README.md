@@ -72,11 +72,9 @@ This simple repository has some important Spring Boot concepts, for example:
 - RabbitMQ:
     - Look Docker compose [file](https://github.com/jeremiasrg/sample-springboot/blob/main/docker-compose.yml).
 - Circuit Breaker with Resilience4j
-    - Look book-service [folder](https://github.com/jeremiasrg/sample-springboot/tree/main/book-service)
-    - Look cambio-service [folder](https://github.com/jeremiasrg/sample-springboot/tree/main/cambio-service)
-    - Look api-gateway [folder](https://github.com/jeremiasrg/sample-springboot/tree/main/api-gateway)
+    - Look sample class [here](https://github.com/jeremiasrg/sample-springboot/blob/main/book-service/src/main/java/br/com/jr/controller/FakeController.java) [](https://github.com/jeremiasrg/sample-springboot/tree/main/api-gateway)
 - Bulkhead, Ratelimiter and Retry with Resilience4j
-    - Look book-service [folder](https://github.com/jeremiasrg/sample-springboot/tree/main/book-service)
+    - Look sample class [here](https://github.com/jeremiasrg/sample-springboot/blob/main/book-service/src/main/java/br/com/jr/controller/FakeController.java) [](https://github.com/jeremiasrg/sample-springboot/tree/main/api-gateway)
 - Docker and Docker Compose
     - Look Docker compose [file](https://github.com/jeremiasrg/sample-springboot/blob/main/docker-compose.yml).
 
