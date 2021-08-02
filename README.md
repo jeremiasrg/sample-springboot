@@ -1,3 +1,42 @@
+# Sample Spring Boot
+
+This sample has been created to show part of my knowledge using Spring Boot.
+
+### App Description:
+
+Here we have two more important services called "cambio-service" and "book-service".
+
+- Cambio-Service converts from one currency to another.
+- Book-Service is a book store, but the books prices always are em american dollars
+
+When Book-Service is called is necessary pass the currency to convert.
+
+ 
+
+Example:
+
+```jsx
+//PATTERN
+http://localhost:8765/book-service/{book_id}/{Currency}
+
+//EXEMPLE
+http://localhost:8765/book-service/1/BRL
+```
+
+The response will show:
+
+```jsx
+{
+  "id": 1,
+  "author": "Michael C. Feathers",
+  "launchDate": "2017-11-29",
+  "price": 49.11,
+  "title": "Working effectively with legacy code",
+}
+```
+
+The book price will be in Reais, brazilian currency. 
+
 ### Projetcs Struture:
 
 This simple repository has some important Spring Boot concepts, for example:
@@ -40,3 +79,65 @@ This simple repository has some important Spring Boot concepts, for example:
     - Look book-service [folder](https://github.com/jeremiasrg/sample-springboot/tree/main/book-service)
 - Docker and Docker Compose
     - Look Docker compose [file](https://github.com/jeremiasrg/sample-springboot/blob/main/docker-compose.yml).
+
+## How to run:
+
+1. Download docker compose [file](https://github.com/jeremiasrg/sample-springboot/blob/main/docker-compose.yml).
+2. run command below in the same directory of the file:
+
+```jsx
+docker-compose up -d
+```
+
+### Services URI:
+
+API Gateway
+
+```jsx
+//Call book service using API Gateway
+http://localhost:8765/book-service/1/BRL
+
+//Response
+{
+  "id": 1,
+  "author": "Michael C. Feathers",
+  "launchDate": "2017-11-29",
+  "price": 49.11,
+  "title": "Working effectively with legacy code",
+  "environment": "8100FEIGN"
+}
+
+//Call Cambio service using API Gateway
+ http://localhost:8765/cambio-service/10/USD/BRL
+
+//Response
+{
+  "id": 1,
+  "from": "USD",
+  "to": "BRL",
+  "conversionFactor": 5.73,
+  "convertedValue": 57.30,
+  "environment": "8000"
+}
+```
+
+### Naming Server / Service Discovery / Service Registry
+
+```jsx
+//Eureka
+http://localhost:8761/
+```
+
+### Zipkin Tracing Server
+
+```jsx
+http://localhost:9411/zipkin
+```
+
+### RabbitMQ
+
+```jsx
+http://localhost:15672/
+```
+
+Is missing something that you think importante ? Send me a message and I will create it. Thank you.
