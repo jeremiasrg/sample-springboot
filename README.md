@@ -32,7 +32,6 @@ The response will show:
   "launchDate": "2017-11-29",
   "price": 49.11,
   "title": "Working effectively with legacy code",
-  "environment": "8100FEIGN"
 }
 ```
 
