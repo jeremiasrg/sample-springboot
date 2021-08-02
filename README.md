@@ -95,28 +95,9 @@ API Gateway
 //Call book service using API Gateway
 http://localhost:8765/book-service/1/BRL
 
-//Response
-{
-  "id": 1,
-  "author": "Michael C. Feathers",
-  "launchDate": "2017-11-29",
-  "price": 49.11,
-  "title": "Working effectively with legacy code",
-  "environment": "8100FEIGN"
-}
-
 //Call Cambio service using API Gateway
  http://localhost:8765/cambio-service/10/USD/BRL
 
-//Response
-{
-  "id": 1,
-  "from": "USD",
-  "to": "BRL",
-  "conversionFactor": 5.73,
-  "convertedValue": 57.30,
-  "environment": "8000"
-}
 ```
 
 ### Naming Server / Service Discovery / Service Registry
