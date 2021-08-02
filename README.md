@@ -1,42 +1,3 @@
-# Sample Spring Boot
-
-This sample has been created to show part of my knowledge using Spring Boot.
-
-### App Description:
-
-Here we have two more important services called "cambio-service" and "book-service".
-
-- Cambio-Service converts from one currency to another.
-- Book-Service is a book store, but the books prices always are em american dollars
-
-When Book-Service is called is necessary pass the currency to convert.
-
- 
-
-Example:
-
-```jsx
-//PATTERN
-http://localhost:8765/book-service/{book_id}/{Currency}
-
-//EXEMPLE
-http://localhost:8765/book-service/1/BRL
-```
-
-The response will show:
-
-```jsx
-{
-  "id": 1,
-  "author": "Michael C. Feathers",
-  "launchDate": "2017-11-29",
-  "price": 49.11,
-  "title": "Working effectively with legacy code",
-}
-```
-
-The book price will be in Reais, brazilian currency. 
-
 ### Projetcs Struture:
 
 This simple repository has some important Spring Boot concepts, for example:
@@ -46,35 +7,36 @@ This simple repository has some important Spring Boot concepts, for example:
 - API Gateway with Spring Cloud API Gateway:
     - Look api-gateway [folder](https://github.com/jeremiasrg/sample-springboot/tree/main/api-gateway)
 - Service Discovery/Service Registry with Eureka Discovery Client:
-    - Look naming-server folder
+    - Look naming-server [folder](https://github.com/jeremiasrg/sample-springboot/tree/main/naming-server)
 - Load Balancing with Eureka
-    - Look api-gateway folder
+    - Look api-gateway [folder](https://github.com/jeremiasrg/sample-springboot/tree/main/api-gateway)
 - Documentation with Open API
-    - Look book-service folder
-    - Look cambio-service folder
+    - Look book-service [folder](https://github.com/jeremiasrg/sample-springboot/tree/main/book-service)
+    - Look cambio-service [folder](https://github.com/jeremiasrg/sample-springboot/tree/main/cambio-service)
 - Swagger
-    - Look book-service folder
-    - Look cambio-service folder
+    - Look book-service [folder](https://github.com/jeremiasrg/sample-springboot/tree/main/book-service)
+    - Look cambio-service [folder](https://github.com/jeremiasrg/sample-springboot/tree/main/cambio-service)
 - Spring Data JPA
-    - Look book-service folder
-    - Look cambio-service folder
+    - Look book-service [folder](https://github.com/jeremiasrg/sample-springboot/tree/main/book-service)
+    - Look cambio-service [folder](https://github.com/jeremiasrg/sample-springboot/tree/main/cambio-service)
 - Migrations: Using Flywaydb
-    - Look book-service folder
-    - Look cambio-service folder
+    - Look book-service [folder](https://github.com/jeremiasrg/sample-springboot/tree/main/book-service)
+    - Look cambio-service [folder](https://github.com/jeremiasrg/sample-springboot/tree/main/cambio-service)
 - Proxy using Feign:
-    - Look book-service folder
+    - Look book-service [folder](https://github.com/jeremiasrg/sample-springboot/tree/main/book-service)
 - Spring Boot Actuator:
-    - Look book-service folder
-    - Look cambio-service folder
+    - Look book-service [folder](https://github.com/jeremiasrg/sample-springboot/tree/main/book-service)
+    - Look cambio-service [folder](https://github.com/jeremiasrg/sample-springboot/tree/main/cambio-service)
 - Tracing with Zipkin and Sleuth
-    - Look book-service folder
-    - Look cambio-service folder
+    - Look book-service [folder](https://github.com/jeremiasrg/sample-springboot/tree/main/book-service)
+    - Look cambio-service [folder](https://github.com/jeremiasrg/sample-springboot/tree/main/cambio-service)
 - RabbitMQ:
-    - Look docker compose file.
+    - Look Docker compose [file](https://github.com/jeremiasrg/sample-springboot/blob/main/docker-compose.yml).
 - Circuit Breaker with Resilience4j
-    - Look book-service folder
-    - Look cambio-service folder
-    - Look api-gateway folder
+    - Look book-service [folder](https://github.com/jeremiasrg/sample-springboot/tree/main/book-service)
+    - Look cambio-service [folder](https://github.com/jeremiasrg/sample-springboot/tree/main/cambio-service)
+    - Look api-gateway [folder](https://github.com/jeremiasrg/sample-springboot/tree/main/api-gateway)
 - Bulkhead, Ratelimiter and Retry with Resilience4j
-    - Look book-service folder
+    - Look book-service [folder](https://github.com/jeremiasrg/sample-springboot/tree/main/book-service)
 - Docker and Docker Compose
+    - Look Docker compose [file](https://github.com/jeremiasrg/sample-springboot/blob/main/docker-compose.yml).
