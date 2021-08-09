@@ -1,6 +1,6 @@
 # Sample Spring Boot
 
-This sample has been created to show part of my knowledge using Spring Boot.
+This sample was create to show part of my knowledge using Spring Boot.
 
 ### App Description:
 
